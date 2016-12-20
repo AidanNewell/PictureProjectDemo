@@ -1,8 +1,8 @@
 
 public class MainScreen extends FlexiblePictureExplorer{
 
-	public MainScreen(DigitalPicture picture) {
-		super(picture);
+	public MainScreen() {
+		super(null);
 		// TODO Auto-generated constructor stub
 	}
 
