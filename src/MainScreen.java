@@ -21,9 +21,9 @@ public class MainScreen extends FlexiblePictureExplorer implements ImageObserver
 										 	 	          {{FINDTHIS,FINDTHIS,path+"timonium.png",path+"Matt.jpg",path+"Rachel.jpg",path+"Ellicott.PNG",path+"Guinea Pigs.jpg",path+"centennial.png",path+"Columbia.PNG"},
 												      	   {},
 													       {path+"Gender-Symbol.jpg",path+"Trans-Pride.jpg",path+"boy-and-girl-playing.jpg",path+"Gender-Dysphoria",path+"brain.jpg",path+"Transition.jpg",FINDTHIS,path+"Discrimination.png",COLLAGE}},
-										 	  	          {{},
-													       {},
-													       {}}};
+										 	  	          {{path+"clipart-earth.png",path+"earth.jpg",path+"GSA.jpg",path+"OWL.jpg",path+"Trans-Lifeline.png",FINDTHIS,path+"PFLAG-Picture.PNG",path+"pastoral-care.jpg"},
+													       {path+"Chalice.jpg",FINDTHIS,path+"UUA.jpg",FINDTHIS,path+"Seven-UU-Principles.jpg",path+"Religion-Collage.png",path+"UUCC-Logo.PNG"},
+													       {path+"Boardgame.gif"}}};
 	
 	
 	
