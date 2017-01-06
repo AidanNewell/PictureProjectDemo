@@ -11,23 +11,23 @@ import java.text.AttributedString;
 
 public class MainScreen extends FlexiblePictureExplorer implements ImageObserver{
 
-	private String path = "slideshow/";
+	private String path = "slideshow\\";
 	//This is used so I don't have to type it out every time in the three dimensional array
 	
 	//Each slideshow of photos is on a different line
-	private final String[][][] images = new String[][][] {{{path+"children.jpg",FINDTHIS,path+"Nassau Hall.jpg",path+"Amtrak.jpg",path+"Plane.jpg",path+"Jane.jpg",path+"TravelCollage.jpg",path+"Cat.jpg",path+"watermelon-touramline.jpg",path+"Littlebrook.PNG",path+"Princeton-Day-School.PNG",path+"Bucks-Rock.jpg",path+"graduation.jpg"},
-													       {path+"school.jpg",path+"Brown.jpg",path+"formula.jpg",path+"IBM.jpg",path+"StonyBrook.jpg",path+"Generic-Diploma.jpg",path+"Temp-ui.jpg"},
-												       	   {path+"maryland-road-map.gif",path+"STSI.jpg",path+"hubble.jpg",path+"JHU.jpg",path+"Schedule.jpg",FINDTHIS,path+"auditorium.jpg"}},
-										 	 	          {{FINDTHIS,FINDTHIS,path+"timonium.png",path+"Matt.jpg",path+"Rachel.jpg",path+"Ellicott.PNG",path+"Guinea Pigs.jpg",path+"centennial.png",path+"Columbia.PNG"},
-												      	   {},
-													       {path+"Gender-Symbol.jpg",path+"Trans-Pride.jpg",path+"boy-and-girl-playing.jpg",path+"Gender-Dysphoria",path+"brain.jpg",path+"Transition.jpg",FINDTHIS,path+"Discrimination.png",COLLAGE}},
-										 	  	          {{path+"clipart-earth.png",path+"earth.jpg",path+"GSA.jpg",path+"OWL.jpg",path+"Trans-Lifeline.png",FINDTHIS,path+"PFLAG-Picture.PNG",path+"pastoral-care.jpg"},
-													       {path+"Chalice.jpg",FINDTHIS,path+"UUA.jpg",FINDTHIS,path+"Seven-UU-Principles.jpg",path+"Religion-Collage.png",path+"UUCC-Logo.PNG"},
-													       {path+"Boardgame.gif"}}};
+//	private final String[][][] images = new String[][][] {{{path+"children.jpg",path+"FINDTHIS.jpg",path+"Nassau Hall.jpg",path+"Amtrak.jpg",path+"Plane.jpg",path+"Jane.jpg",path+"TravelCollage.jpg",path+"Cat.jpg",path+"watermelon-touramline.jpg",path+"Littlebrook.PNG",path+"Princeton-Day-School.PNG",path+"Bucks-Rock.jpg",path+"graduation.jpg"},
+//													       {path+"school.jpg",path+"Brown.jpg",path+"formula.jpg",path+"IBM.jpg",path+"StonyBrook.jpg",path+"Generic-Diploma.jpg",path+"Temp-ui.jpg"},
+//												       	   {path+"maryland-road-map.gif",path+"STSI.jpg",path+"hubble.jpg",path+"JHU.jpg",path+"Schedule.jpg",path+"FINDTHIS.jpg",path+"auditorium.jpg"}},
+//										 	 	          {{path+"FINDTHIS.jpg",path+"FINDTHIS.jpg",path+"timonium.png",path+"Matt.jpg",path+"Rachel.jpg",path+"Ellicott.PNG",path+"Guinea Pigs.jpg",path+"centennial.png",path+"Columbia.PNG"},
+//												      	   {path+"FINDTHIS.jpg"},
+//													       {path+"Gender-Symbol.jpg",path+"Trans-Pride.jpg",path+"boy-and-girl-playing.jpg",path+"Gender-Dysphoria",path+"brain.jpg",path+"Transition.jpg",path+"FINDTHIS.jpg",path+"Discrimination.png",path+"FINDTHIS.jpg"}},
+//										 	  	          {{path+"clipart-earth.png",path+"earth.jpg",path+"GSA.jpg",path+"OWL.jpg",path+"Trans-Lifeline.png",path+"FINDTHIS.jpg",path+"PFLAG-Picture.PNG",path+"pastoral-care.jpg"},
+//													       {path+"Chalice.jpg",path+"FINDTHIS.jpg",path+"UUA.jpg",path+"FINDTHIS.jpg",path+"Seven-UU-Principles.jpg",path+"Religion-Collage.png",path+"UUCC-Logo.PNG"},
+//													       {path+"Boardgame.gif"}}};
+//	
 	
 	
-	
-	Picture[] Tests;
+	//Picture[] Tests;
 	private int row;
 	private int col;
 	private int depth;
@@ -43,13 +43,11 @@ public class MainScreen extends FlexiblePictureExplorer implements ImageObserver
 		main = true;
 		Picture disp = new Picture(600, 600);
 		Graphics2D graphics = disp.createGraphics();
-		int counter = 0;
 		for (int x = 0; x < 3; x++) {
-			for (int y = 0; y < 3; y++) {
+			for (int y = 0; y < 3; y++) {	
 				Picture pict;
-				pict = new Picture(images[x][y][0]);
+				pict = new Picture(200,200);
 				graphics.drawImage(pict.getBufferedImage(), 200*x, 200*y, this);
-				counter++;
 			}
 		}
 
